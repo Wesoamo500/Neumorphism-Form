@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(12, 9, 36);
+}
+section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}         
+.form{
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow:  8px 8px 4px 4px rgb(8, 6, 23), -8px -8px 4px 4px rgb(17, 12, 50);
+}
+input{
+    width: 100%;
+    height: 50px;
+    background: inherit;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    color: rgb(125, 223, 223);
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 18px;
+    box-shadow:inset 2px 2px 0px 2px rgb(8, 6, 23),inset -2px -2px 0px 2px rgb(17, 12, 50); ;
+}
+input::placeholder{
+    color: rgb(125, 223, 223);
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 18px;
+}
+.logo{
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    box-shadow:  3px 3px 2px 2px rgb(8, 6, 23), -3px -3px 2px 2px rgb(17, 12, 50);
+}
+p{
+    color: rgb(125, 223, 223);
+    font-style: italic;
+    font-weight: normal;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-top: 10px;
+}
+.btn{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    color: rgb(125, 223, 223);
+    background: inherit;
+    font-weight: normal;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 22px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow:  3px 3px 2px 2px rgb(8, 6, 23), -3px -3px 2px 2px rgb(17, 12, 50);
+}
+.btn:hover{
+    box-shadow: inset 3px 3px 2px 2px rgb(8, 6, 23), inset -3px -3px 2px 2px rgb(17, 12, 50);
+    transition: box-shadow ease-in;
+}
+.options{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+.options div{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 2px 2px 2px 2px rgb(8, 6, 23), inset -2px -2px 2px 2px rgb(17, 12, 50);
+}
+.options div:hover{
+    box-shadow:  2px 2px 2px 2px rgb(8, 6, 23),  -2px -2px 2px 2px rgb(17, 12, 50);
+    transition: box-shadow ease-in;
+}
+.options div > img{
+    width: 40px;
+    height: 40px;
+}
+
+@media  screen and (max-width:375px){
+    .form{
+        width: 300px;
+        height: 400px;
+    }
+    input{
+        height: 60px;
+    }
+    .logo{
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .btn{
+        margin-top: 15px;
+    }
+}

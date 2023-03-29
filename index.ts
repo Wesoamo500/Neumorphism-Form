@@ -1,0 +1,1 @@
+const btn : HTMLButtonElement = document.querySelector('.btn')!;
